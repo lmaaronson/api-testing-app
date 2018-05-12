@@ -55,8 +55,9 @@ class App extends Component {
     let url = 'https://cors.io/?'
     axios.get(url + baseUrl)
       .then(res => {
-        console.log('res', res);
-        // console.log("listings.listing[0].title')
+        let listings = 
+        // console.log('res', res);
+        console.log(res.data.listings.listing[0].title)  //res object, under data
       });
 
     // arrow functions lexically bind the 'this' keyword
